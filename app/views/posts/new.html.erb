@@ -1,6 +1,6 @@
 <h1>Novo post</h1>
 
-<%= form_with model:@post, url: posts_path do |f| %>
+<%= form_with model: @posth do |f| %>
   <p>
     <%= f.label :Título %> <br>
     <%= f.text_field :title %> 
@@ -9,7 +9,7 @@
     <%= f.label :Texto %> <br>
     <%= f.text_field :body %> 
   </p>
-  <p>
-    <%= f.submit 'Enviar' %> <br>
-  </p>
+  <button>
+    <%= f.submit 'Enviar' %>
+  </button>
 <% end %>
