@@ -1,24 +1,11 @@
-# README
+# New training with 'blog' creation using Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Redoing the steps of creating a blog with Rails, but a little different.
 
-Things you may want to cover:
+The exercise uses the tools and versions below:  
 
-* Ruby version
+* Ruby version: 3.0.0  
 
-* System dependencies
+* Rails version: 6.1.4.1  
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Authentication and authorization with Devise  
