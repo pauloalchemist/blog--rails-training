@@ -1,4 +1,4 @@
-# New training with 'blog' creation using Rails
+## New training with 'blog' creation using Rails
 
 Redoing the steps of creating a blog with Rails, but a little different.
 
