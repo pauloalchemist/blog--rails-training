@@ -1,11 +1,16 @@
-<h1 class="title'">
-  <%= @post.title %>
-</h1>
+<div id="post_content">
 
-<p class="date">
-  Enviado em <%= time_ago_in_words(@post.created_at) %>
-</p>
+  <h1 class="title'">
+    <%= @post.title %>
+  </h1>
 
-<p class="body">
-  <%= @post.body %>
-</p>
+  <p class="date">
+    Enviado em <%= time_ago_in_words(@post.created_at) %>
+  </p>
+
+  <p class="body">
+    <%= @post.body %>
+  </p>
+
+</div>
+
