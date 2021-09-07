@@ -1,7 +1,21 @@
 <div class="page_wrapper">
   <h1>Novo post</h1>
 
-  <%= form_with model: @post do |f| %>
+    <%= form_with model: @post do |f| %>
+
+    <% if @post.errors.any? %>
+      <div id= 'errors'>
+        <h2><%= pluralize(@post.errors.count, 'erro')%> 
+            Veja abaixo o que impediu a postagem de ser salva:
+        </h2>
+        <ul>
+          <% @post.errors.full_messages.each do |msg|%>
+            <li><%= msg%></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
     <p>
       <%= f.label :Título %> <br>
       <%= f.text_field :title %> 
@@ -13,6 +27,6 @@
     <button>
       <%= f.submit 'Enviar' %>
     </button>
-  <% end %>
+    <% end %>
 </div>
 
