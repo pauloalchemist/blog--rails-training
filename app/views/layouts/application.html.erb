@@ -35,14 +35,15 @@
         <p>About</p>
         <div class="buttons">
           <button class="button">
-            <%= link_to "New Post", new_post_path %>
+            <%= link_to "Novo Post", new_post_path %>
           </button>
-          <button class="button">Log Out</button>
+          <button class="button">Sair</button>
         </div>
       </div>
       <% flash.each do |name, msg| %>
         <%= content_tag(:div, msg, class: "alert") %>
       <% end %>
+
       <%= yield%>
     </div>
 
